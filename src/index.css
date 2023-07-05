@@ -1,69 +1,202 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+* {
+  box-sizing: border-box;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+
+/**App Component**/
+
+.container {
+  background-color: #f5f5f5;
+  width: 100vw;
+  min-width: 400px;
+  max-width: 1150px;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  height: 150px;
+  background: linear-gradient(
+      180deg,
+      #319e97 0%,
+      rgba(49, 158, 151, 0) 59.9%,
+      rgba(49, 158, 151, 0) 100%
+    ),
+    url("images/header-bg-1.png");
+  background-size: cover;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-input-field,
+.search-dropdown-field {
+  padding: 0.3em;
+  width: 200px;
+  height: 30px;
+  font-size: 0.75rem;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-family: Calistoga;
+  font-size: 2rem;
+  margin-bottom: 0.3em;
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  margin-top: 0;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+/**Search results component**/
+
+.employee-results-container {
+  margin-top: 3em;
+  display: grid;
+  justify-content: center;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+.employee-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 480px;
+  background-color: #ffffff;
+  padding: 1em;
+  margin: 0.5em;
+  position: relative;
+}
+
+.employee-profile > img {
+  border-radius: 50%;
+  width: 120px;
+}
+
+.employee-profile-name-title-container {
+  text-align: center;
+  font-weight: 700;
+}
+
+.employee-profile-name-title-container p:first-child {
+  margin-bottom: 0;
+  font-size: 1.25rem;
+}
+
+.employee-profile-name-title-container p:last-child {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+}
+
+.employee-profile-bio {
+  line-height: 1.6;
+  width: 272px;
+  height: 180px;
+  font-size: 0.9rem;
+}
+
+.social-icons-container {
+  position: absolute;
+  bottom: 10px;
+}
+
+.social-icons-container img:nth-child(1) {
+  margin-right: 0.5em;
+  width: 23px;
+  height: 23px;
+}
+.social-icons-container img:nth-child(2) {
+  width: 23px;
+  height: 28px;
+}
+
+@media (min-width: 550px) {
+  header {
+    height: 200px;
   }
-  a:hover {
-    color: #747bff;
+
+  h1 {
+    font-size: 2.75rem;
   }
-  button {
-    background-color: #f9f9f9;
+
+  .search-input-field,
+  .search-dropdown-field {
+    font-size: 0.85rem;
+    height: 35px;
+  }
+
+  .search {
+    flex-direction: row;
+  }
+
+  .search-container {
+    margin-bottom: 1em;
+  }
+}
+
+@media (min-width: 650px) {
+  header {
+    height: 250px;
+  }
+
+  h1 {
+    font-size: 3.75rem;
+  }
+
+  .search-input-field,
+  .search-dropdown-field {
+    font-size: 1rem;
+    height: 40px;
+  }
+
+  .search {
+    flex-direction: row;
+  }
+
+  .employee-results-container {
+    grid-template-columns: repeat(2, 320px);
+    grid-template-rows: repeat(2, auto);
+  }
+}
+
+@media (min-width: 950px) {
+  header {
+    height: 300px;
+  }
+
+  h1 {
+    font-size: 4.75rem;
+  }
+
+  .search-input-field,
+  .search-dropdown-field {
+    font-size: 1.25rem;
+    height: 45px;
+  }
+
+  .search {
+    flex-direction: row;
+  }
+
+  .employee-results-container {
+    grid-template-columns: repeat(3, 320px);
+    grid-template-rows: repeat(3, auto);
   }
 }
