@@ -1,10 +1,12 @@
+import adamImg from "/src/assets/adam.jpg";
+
 const employees = [
   {
     team: "leadership",
     name: "Jeremy Durant",
     title: "CEO",
     bio: "<p>Jeremy developed an interest in computers at an early age. He graduated with a computer science and electrical engineering degree.</p> <p>He was an early founder of successful companies like BlueSpace, Eazybit, and Drifly.</p>",
-    image: "/src/assets/jeremy.jpg",
+    image: `${adamImg}`,
     social: {
       linkedin: "https://www.linkedin.com/",
     },
