@@ -4,7 +4,7 @@ const employees = [
     name: "Jeremy Durant",
     title: "CEO",
     bio: "<p>Jeremy developed an interest in computers at an early age. He graduated with a computer science and electrical engineering degree.</p> <p>He was an early founder of successful companies like BlueSpace, Eazybit, and Drifly.</p>",
-    image: "src/assets/jeremy.jpg",
+    image: "/src/assets/jeremy.jpg",
     social: {
       linkedin: "https://www.linkedin.com/",
     },
@@ -14,7 +14,7 @@ const employees = [
     name: "Abdulkareem Jalal",
     title: "CTO",
     bio: "<p>Abdulkareem got a PhD in Computer Science from Stanford. He loves coding.</p> <p>When he’s not coding he spends time in his cabin with his wife and two daughters.</p>",
-    image: "src/assets/abdulkareem.jpg",
+    image: "/src/assets/abdulkareem.jpg",
     social: {
       twitter: "https://twitter.com/",
       linkedin: "https://www.linkedin.com/",
@@ -25,7 +25,7 @@ const employees = [
     name: "Susan Wójcik",
     title: "CPO",
     bio: "<p>Susan spent her school years running a web hosting business from her room in Seattle, Washington.</p> <p>Susan loves to read, hike, cook and bird watching. Not necessarily in that order.</p>",
-    image: "src/assets/susan.jpg",
+    image: "/src/assets/susan.jpg",
     social: {
       twitter: "https://twitter.com/",
     },
@@ -59,7 +59,7 @@ const employees = [
     name: "MuhammadAdel",
     title: "Customer Success",
     bio: "<p>Muhammad Adel has worked in customer service for the last 30 years.</p> <p>It was his first job after high school and he’s still working in customer service all these later!</p>",
-    image: "src/assets/muhammad.jpg",
+    image: "/src/assets/muhammad.jpg",
     social: {
       twitter: "https://twitter.com/",
       linkedin: "https://www.linkedin.com/",
@@ -70,7 +70,7 @@ const employees = [
     name: "Alexander Smith",
     title: "Customer Success",
     bio: "<p>Alexander finished his bachelors from the University of Pennsylvania in Economics.</p> <p>Alexander loves skateboarding and snowboarding.</p>",
-    image: "src/assets/alexander.jpg",
+    image: "/src/assets/alexander.jpg",
     social: {
       linkedin: "https://www.linkedin.com/",
     },
@@ -80,7 +80,7 @@ const employees = [
     name: "Naomi Harris",
     title: "Software Engineer",
     bio: "<p>Naomi has been working in tech for the last 35 years. Jeremy’s interest in computers started when his mom brought home a Commodore 64.</p> <p>Jeremy has a bachelor and masters from University of Wisconsin-Madison.</p>",
-    image: "src/assets/naomi.jpg",
+    image: "/src/assets/naomi.jpg",
     social: {
       linkedin: "https://www.linkedin.com/",
     },
@@ -90,7 +90,7 @@ const employees = [
     name: "Paulo Dinsen",
     title: "Software Engineer",
     bio: "<p>Paulo got a PhD in Computer Science from UCF. He loves coding.</p> <p>When he’s not coding he spends time in his cabin with his dog and two cats.</p>",
-    image: "src/assets/paulo.jpg",
+    image: "/src/assets/paulo.jpg",
     social: {
       twitter: "https://twitter.com/",
       linkedin: "https://www.linkedin.com/",
@@ -101,7 +101,7 @@ const employees = [
     name: "Adam Tesfaye",
     title: "Software Engineer",
     bio: "<p>Adam spent their school years running a freelance coding business from their apartment in Atlanta, Georgia.</p> <p>Adam loves to cook, play soccer, and watch movies. Not necessarily in that order.</p>",
-    image: "src/assets/adam.jpg",
+    image: "/src/assets/adam.jpg",
     social: {
       twitter: "https://twitter.com/",
     },
@@ -112,7 +112,7 @@ const employees = [
     name: "Jessica Albertson",
     title: "Designer",
     bio: "<p>Jessica did a double major in Art and Industrial Design at Carnegie Mellon University.</p> <p>She currently lives in Philadelphia with her husband Sej and two kids.</p>",
-    image: "src/assets/jessica.jpg",
+    image: "/src/assets/jessica.jpg",
     social: {
       twitter: "https://twitter.com/",
       linkedin: "https://www.linkedin.com/",
@@ -124,7 +124,7 @@ const employees = [
     name: "Anders Wiig",
     title: "UX Designer",
     bio: "<p>Anders is a designer...</p>",
-    image: "src/assets/anders.jpg",
+    image: "/src/assets/anders.jpg",
     social: {
       twitter: "https://twitter.com/",
       linkedin: "https://www.linkedin.com/",
