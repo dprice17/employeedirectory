@@ -15,13 +15,12 @@ export default function SearchResults(props) {
           <p key={index}>{sentence.replace(/<p>/g, "")}</p>
         ));
 
-      const photos = "/src/assets/photos";
       const employeeImagePathSplit = employee.image.split("/");
       const employeeJpgFile = employeeImagePathSplit[2];
 
       return (
         <div className="employee-profile" key={uuidv4()}>
-          <img src={`${photos}/adam.jpg`} alt="Employee" />
+          <img src={"src/assets/adam.jpg"} alt="Employee" />
           <div className="employee-profile-name-title-container">
             <p>{employee.name}</p>
             <p>{employee.title}</p>
