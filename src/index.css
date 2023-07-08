@@ -38,7 +38,7 @@ header {
       rgba(49, 158, 151, 0) 59.9%,
       rgba(49, 158, 151, 0) 100%
     ),
-    url("images/header-bg-1.png");
+    url("src/assets/header-bg-1.png");
   background-size: cover;
 }
 

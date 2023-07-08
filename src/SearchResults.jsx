@@ -1,6 +1,5 @@
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
-//import employeeImages from "src/assets/";
 import twitterLogo from "/src/assets/twitter1.png";
 import linkdenLogo from "/src/assets/linkden1.png";
 
@@ -16,9 +15,12 @@ export default function SearchResults(props) {
           <p key={index}>{sentence.replace(/<p>/g, "")}</p>
         ));
 
+      const employeeImagePathSplit = employee.image.split("/");
+      const employeeJpgFile = employeeImagePathSplit[2];
+
       return (
         <div className="employee-profile" key={uuidv4()}>
-          <img alt="Employee" />
+          <img src={`src/assets/${employeeJpgFile}`} alt="Employee" />
           <div className="employee-profile-name-title-container">
             <p>{employee.name}</p>
             <p>{employee.title}</p>
