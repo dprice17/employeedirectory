@@ -20,7 +20,7 @@ export default function SearchResults(props) {
 
       return (
         <div className="employee-profile" key={uuidv4()}>
-          <img src={`employeedirectory/src/assets/adam.jpg`} alt="Employee" />
+          <img src={`employeedirectory/src/adam.jpg`} alt="Employee" />
           <div className="employee-profile-name-title-container">
             <p>{employee.name}</p>
             <p>{employee.title}</p>
