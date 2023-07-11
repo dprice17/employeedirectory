@@ -32,12 +32,6 @@ header {
   justify-content: center;
   border: 2px solid black;
   height: 150px;
-  background: linear-gradient(
-    180deg,
-    #319e97 0%,
-    rgba(49, 158, 151, 0) 59.9%,
-    rgba(49, 158, 151, 0) 100%
-  );
 }
 
 .search {
