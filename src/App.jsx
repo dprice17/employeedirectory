@@ -21,18 +21,18 @@ export default function App() {
 
   useEffect(() => {
     const matchingResults = employees.filter((employee) => {
-      const name = employee.name.toLowerCase();
+      const employeeName = employee.name.toLowerCase();
       const employeeSearched = employeeSearch.toLowerCase();
+      let slicedName = employeeName.slice(0, employeeSearched.length);
       const employeeDepartment = employee.team;
       const selectedDepartment = selectDepartment;
+      const employeeDepartmentMatch = employeeDepartment === selectDepartment;
 
       if (selectedDepartment === "everyone") {
-        return name.slice(0, employeeSearched.length) === employeeSearched;
+        return slicedName === employeeSearched;
       }
-      return (
-        employeeDepartment === selectedDepartment &&
-        name.slice(0, employeeSearched.length) === employeeSearched
-      );
+
+      return employeeDepartmentMatch && slicedName === employeeSearched;
     });
 
     setEmployeeSearchMatches(matchingResults);
@@ -80,7 +80,7 @@ export default function App() {
 
       <SearchResults
         employees={
-          employeeSearchMatches.length > 0 ? employeeSearchMatches : employees
+          employeeSearchMatches.length > 0 ? employeeSearchMatches : []
         }
       />
     </div>

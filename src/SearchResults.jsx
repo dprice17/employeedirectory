@@ -41,7 +41,12 @@ export default function SearchResults(props) {
         </div>
       );
     });
-    return employeeProfiles;
+
+    if (employees.length === 0) {
+      return <p className="no-results-notification">No results found</p>;
+    } else {
+      return employeeProfiles;
+    }
   };
 
   return (
