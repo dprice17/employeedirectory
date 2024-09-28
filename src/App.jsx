@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import SearchResults from "./SearchResults.jsx";
+import SearchBar from "./SearchBar.jsx";
 import Employees from "./Employees.js";
 import headerBackground from "/src/assets/header-bg-1.png";
 
@@ -53,31 +54,6 @@ export default function App() {
 
   return (
     <div className="container">
-      <header style={headerStyles}>
-        <div>
-          <h1>Meet the Team</h1>
-        </div>
-        <div className="search">
-          <select
-            className="search-dropdown-field"
-            onChange={handleSelectDepartment}
-          >
-            <option value="everyone">Everyone</option>
-            <option value="leadership">Leadership</option>
-            <option value="sales">Sales</option>
-            <option value="customer service">Customer Service</option>
-            <option value="product">Product</option>
-          </select>
-          <input
-            type="text"
-            placeholder="search name"
-            className="search-input-field"
-            onChange={handleEmployeeSearch}
-            value={employeeSearch}
-          />
-        </div>
-      </header>
-
       <SearchResults
         employees={
           employeeSearchMatches.length > 0 ? employeeSearchMatches : []
