@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import SearchResults from "./SearchResults.jsx";
-import SearchBar from "./SearchBar.jsx";
+import SearchResults from "./components/SearchResults.jsx";
+import SearchBar from "./components/SearchBar.jsx";
 import Employees from "./Employees.js";
 import headerBackground from "/src/assets/header-bg-1.png";
 
