@@ -1,5 +1,4 @@
-import images from "./src/assets/images.js";
-/*
+
 import jeremyImg from "/src/assets/jeremy.jpg";
 import abdulkareemImg from "/src/assets/abdulkareem.jpg";
 import susanImg from "/src/assets/susan.jpg";
@@ -12,7 +11,6 @@ import pauloImg from "/src/assets/paulo.jpg";
 import adamImg from "/src/assets/adam.jpg";
 import jessicaImg from "/src/assets/jessica.jpg";
 import andersImg from "/src/assets/anders.jpg";
-*/
 
 const employees = [
   {
@@ -20,7 +18,7 @@ const employees = [
     name: "Jeremy Durant",
     title: "CEO",
     bio: "<p>Jeremy developed an interest in computers at an early age. He graduated with a computer science and electrical engineering degree.</p> <p>He was an early founder of successful companies like BlueSpace, Eazybit, and Drifly.</p>",
-    image: `${images.jeremy}`,
+    image: `${jeremyImg}`,
     social: {
       linkedin: "https://www.linkedin.com/",
     },
