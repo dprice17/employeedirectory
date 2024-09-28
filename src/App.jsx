@@ -54,6 +54,12 @@ export default function App() {
 
   return (
     <div className="container">
+      <SearchBar
+        handleSelectDepartment={handleSelectDepartment}
+        handleEmployeeSearch={handleEmployeeSearch}
+        employeeSearch={employeeSearch}
+        //style={headerStyles}
+      />
       <SearchResults
         employees={
           employeeSearchMatches.length > 0 ? employeeSearchMatches : []
