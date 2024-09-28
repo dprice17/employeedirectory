@@ -1,11 +1,11 @@
 import React from "react";
 
 export default function SearchBar(props) {
-  const { handleEmployeeSearch, handleSelectDepartment, employeeSearch } =
+  const { handleEmployeeSearch, handleSelectDepartment, employeeSearch, style } =
     props;
 
   return (
-    <header>
+    <header style={style}>
       <div>
         <h1>Meet the Team</h1>
       </div>

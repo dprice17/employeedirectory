@@ -58,7 +58,7 @@ export default function App() {
         handleSelectDepartment={handleSelectDepartment}
         handleEmployeeSearch={handleEmployeeSearch}
         employeeSearch={employeeSearch}
-        //style={headerStyles}
+        style={headerStyles}
       />
       <SearchResults
         employees={
